@@ -1,0 +1,51 @@
+<li class="tile">
+  <div data-hook="state" class="normal-tile">
+    <table style="height: 100%;" data-bind="with: pricing">
+      <tr>
+        <td data-hook="symbol" class="tile-symbol"></td>
+        <td data-hook="isExecuting" class="tile-symbol">EXECUTING</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table style="text-align: center" data-hook="notStale">
+            <tr>
+              <td class="one-way-price">
+                <div data-hook="one-way-price-bid"></div>
+              </td>
+              <td style="width: 20px;">
+                <table style="height: 100%">
+                  <tr style="height: 30%">
+                    <td>
+                      <div class="arrow-up" data-hook="up-movement"></div>
+                    </td>
+                  </tr>
+                  <tr style="height: 40%">
+                    <td><span data-hook="spread" class="primary-foreground" style="font-size: 16px; margin: 3px"></span>
+                    </td>
+                  </tr>
+                  <tr style="height: 30%">
+                    <td>
+                      <div class="arrow-down" data-hook="down-movement"></div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="one-way-price">
+                <div data-hook="one-way-price-ask"></div>
+              </td>
+            </tr>
+          </table>
+          <div style="color:white;text-align: left" data-hook="stale">Pricing currently unavailable</div>
+        </td>
+      </tr>
+      <tr data-hook="isStale">
+        <td>
+          <span data-hook="dealtCurrency" class="secondary-foreground" style="font-size: 16px"></span>
+          <input data-hook="notional" class="notional" style="font-size: 16px" />
+        </td>
+        <td><span data-hook="spotDate" class="secondary-foreground" style="font-size: 16px;float: right;"></span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</li>
